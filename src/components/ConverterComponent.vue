@@ -62,7 +62,7 @@ watch(inputValue, (value) => {
     </div>
     <div class="mb-3">
       <label for="meters" class="form-label">{{ outputName }}</label>
-      <input type="text" :value="outputValue" class="form-control" id="meters" disabled placeholder="Введите значение">
+      <input type="text" :value="outputValue" class="form-control" id="meters" disabled>
     </div>
   </div>
 </template>
@@ -71,7 +71,7 @@ watch(inputValue, (value) => {
 .converter-block {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  gap: 2rem;
   width: 35rem;
   margin-inline: auto;
 }
